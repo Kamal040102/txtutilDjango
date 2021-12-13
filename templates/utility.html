@@ -1,0 +1,31 @@
+{% extends "boilerplate.html" %}
+
+{% block title %}Utility{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1 class="text-center text-success pt-5">This is utility page</h1>
+    <p class="text-monospace text-center pt-1 pb-5">Perform the required operation below:</p>
+
+    <form action=/solution method="post">
+        <textarea required name="userinp" id="userinp" class="w-100 h-25" placeholder="Enter your text here"></textarea><br><br>
+        <label for="option" required>Filter:<br>
+        <ul style="list-style-type: none;">
+            <li>Remove Punctuations
+                <input type="checkbox" name="rempunc">
+                <br>
+            </li>
+            <li>Remove '@'
+                <input type="checkbox" name="remat"><br>
+            </li>
+            <li>Remove Newline
+                <input type="checkbox" name="remnewline"><br>
+            </li>
+        </ul>
+    </label>
+        <br>
+        <button type="submit" class="btn-success m-auto d-block w-100"><h4 class="p-0 m-0">Get Solution<h4></button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "boilerplate.html" %}
+
+{% block title %}Solution{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1 class="text-center pt-5 pb-5 text-success text-decoration-underline">Solution</h1>
+    <h4>Your Input:<br><div style="margin-left: 100px;"><pre>{{userkainput}}</pre></div></h4>
+    <hr>
+    <h4 class="">Your Selected Option(s): {{userkaselectkiyahuaoption}}</h4>
+    <hr>
+    <h4 class="pb-3">Solution:<br><div style="margin-left: 100px;"><pre><b>{{solution}}</b></pre></div></h4>
+</div>
+
+{% endblock %}
